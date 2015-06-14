@@ -9,7 +9,7 @@ https://cdn.rawgit.com/Brainleaf/shareMeUp/master/cdn/alpha/latest/js/sharemeup.
 https://cdn.rawgit.com/Brainleaf/shareMeUp/master/cdn/alpha/latest/js/jquery.sharemeup.min.js
 ```
 
-### Usage from CDN
+### Install from CDN
 ShareMeUp requires jQuery Library, so if you don't have it already loaded, include it in your page:
 ```html
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -19,6 +19,11 @@ Then include the two following lines
 <script src="https://cdn.rawgit.com/Brainleaf/shareMeUp/master/cdn/alpha/latest/js/sharemeup.min.js"><script>
 <script>new shareMeUp({async:true,size:"large",style:"default"}).init();</script>
 ```
+
+#### CDN updates
+CDN will be updated only with the latest main stable version.<br>
+Each main version will have his cdn link, so you will recive only updates only for the main version you are using.<br>
+**Subscribe our newsletter to stay updated about new releases and updates.**
 
 ***
 
