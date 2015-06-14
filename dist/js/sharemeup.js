@@ -1,9 +1,12 @@
 var shareMeUp = function (params) {
     
     this.params = params;
+    this.params.css = "css/sharemeup.min.css";
+    this.params.plugin = "js/jquery.sharemeup.js";
+    this.params.imgPath = "img/sharemeup/"
     
     this.init = function () {
-        $('body').one().prepend('<link rel="stylesheet" href="https://cdn.rawgit.com/Brainleaf/shareMeUp/master/cdn/alpha/latest/css/sharemeup.min.css">');
+        $('body').one().prepend('<link rel="'+ this.params.css +'">');
                     
         if ( this.params.async === true ) {
             $(window).on('load', ajaxCaller(this.params));
@@ -15,16 +18,16 @@ var shareMeUp = function (params) {
     
     function ajaxCaller(params) {
         $.ajax({
-            url: 'https://cdn.rawgit.com/Brainleaf/shareMeUp/master/cdn/alpha/latest/js/jquery.sharemeup.min.js',
+            url: params.plugin,
             success: function() {
                 $('.sharemeup').shareMeUp({
                     size: params.size,
                     style: params.style,
-                    imgPath: "https://cdn.rawgit.com/Brainleaf/shareMeUp/master/cdn/alpha/latest/img/sharemeup/"
+                    imgPath: params.imgPath
                 });
             },
             error: function() {
-                alert('error');
+                alert('ShareMeUp: Ajax Error!');
             }
         });
     }

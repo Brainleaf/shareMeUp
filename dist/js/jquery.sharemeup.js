@@ -5,9 +5,10 @@
 
         var pluginName = "shareMeUp",
             defaults = {
+                layout: "default",
                 size: "medium",
                 style: "default",
-                imgPath: "../img/"
+                imgPath: "img/sharemeup/"
             };
 
 		// Constructor

@@ -20,3 +20,13 @@ Then include the two following lines
 <script>new shareMeUp({async:true,size:"large",style:"default"}).init();</script>
 ```
 
+#### Hystory
+
+**Version 0.9.0**
+* Two new icon styles added: _rounded_ and _hexagon_ 
+
+**Version 0.8.2**
+* Some javascript updates
+
+**Version 0.8.1**
+* First Update
