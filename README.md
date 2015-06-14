@@ -20,6 +20,24 @@ Then include the two following lines
 <script>new shareMeUp({async:true,size:"large",style:"default"}).init();</script>
 ```
 
+***
+
+#### Styles
+
+| Default  | Hexagon  | Rounded |
+| :---------------: |:---------------:| :---------------:|
+| <img src="https://github.com/Brainleaf/shareMeUp/blob/master/dist/img/sharemeup/default/btn_default_linkedin_large.png">      | <img src="https://github.com/Brainleaf/shareMeUp/blob/master/dist/img/sharemeup/hexagon/btn_hexagon_linkedin_large.png"> | <img src="https://github.com/Brainleaf/shareMeUp/blob/master/dist/img/sharemeup/rounded/btn_rounded_linkedin_large.png"> |
+
+#### Sizes
+
+| Small  | Medium  | Large |
+| :---------------: |:---------------:| :---------------:|
+| <img src="https://github.com/Brainleaf/shareMeUp/blob/master/dist/img/sharemeup/default/btn_default_twitter_small.png" style="width:15px;height:15px;">      | <img src="https://github.com/Brainleaf/shareMeUp/blob/master/dist/img/sharemeup/default/btn_default_twitter_medium.png" style="width:30px;height:30px;"> | <img src="https://github.com/Brainleaf/shareMeUp/blob/master/dist/img/sharemeup/default/btn_default_twitter_large.png" style="width:40px;height:40px;"> |
+
+
+***
+
+
 #### Hystory
 
 **Version 0.9.0**
