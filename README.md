@@ -32,7 +32,7 @@ Then include the two following lines
 
 | Small  | Medium  | Large |
 | :---------------: |:---------------:| :---------------:|
-| <img src="https://github.com/Brainleaf/shareMeUp/blob/master/dist/img/sharemeup/default/btn_default_twitter_small.png" style="width:15px;height:15px;">      | <img src="https://github.com/Brainleaf/shareMeUp/blob/master/dist/img/sharemeup/default/btn_default_twitter_medium.png" style="width:30px;height:30px;"> | <img src="https://github.com/Brainleaf/shareMeUp/blob/master/dist/img/sharemeup/default/btn_default_twitter_large.png" style="width:40px;height:40px;"> |
+| 15px    | 30px |  40px |
 
 
 ***
