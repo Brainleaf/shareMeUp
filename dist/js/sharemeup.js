@@ -6,7 +6,7 @@ var shareMeUp = function (params) {
     this.params.imgPath = "img/sharemeup/"
     
     this.init = function () {
-        $('body').one().prepend('<link rel="'+ this.params.css +'">');
+        $('body').one().prepend('<link rel="stylesheet" href="'+ this.params.css +'">');
                     
         if ( this.params.async === true ) {
             $(window).on('load', ajaxCaller(this.params));
