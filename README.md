@@ -40,6 +40,9 @@ Each main version will have his cdn link, so you will recive only updates only f
 
 #### Hystory
 
+**Version 0.9.1**
+* Some bugs fixed
+
 **Version 0.9.0**
 * Two new icon styles added: _rounded_ and _hexagon_ 
 
