@@ -11,7 +11,7 @@ ShareMeUp requires jQuery Library, so if you don't have it already loaded, inclu
 ```
 Then include the two following lines
 ```javascript
-<script src="http://brainleaf.github.io/shareMeUp/cdn/alpha/latest/js/sharemeup.js"><script>
+<script src="https://brainleaf.github.io/shareMeUp/cdn/alpha/latest/js/sharemeup.js"><script>
 <script>new shareMeUp({async:true,size:"large",style:"default"}).init();</script>
 ```
 
