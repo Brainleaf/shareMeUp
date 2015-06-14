@@ -3,8 +3,20 @@ ShareMeUp is an open source widget for social networks page sharing
 
 ## WARNING
 This plugin is under develope, so don't use it at now!
+
 ```html
 https://cdn.rawgit.com/Brainleaf/shareMeUp/master/cdn/alpha/latest/js/sharemeup.min.js
 https://cdn.rawgit.com/Brainleaf/shareMeUp/master/cdn/alpha/latest/js/jquery.sharemeup.min.js
-https://cdn.rawgit.com/Brainleaf/shareMeUp/master/cdn/alpha/latest/css/sharemeup.min.css
 ```
+
+### Usage from CDN
+ShareMeUp requires jQuery Library, so if you don't have it already loaded, include it in your page:
+```html
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+```
+Then include the two following lines
+```javascript
+<script src="https://cdn.rawgit.com/Brainleaf/shareMeUp/master/cdn/alpha/latest/js/sharemeup.min.js"><script>
+<script>new shareMeUp({async:true,size:"large",style:"default"}).init();</script>
+```
+
