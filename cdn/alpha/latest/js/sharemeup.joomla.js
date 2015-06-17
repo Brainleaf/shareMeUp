@@ -20,7 +20,7 @@ var shareMeUp = function (params) {
         jQuery.ajax({
             url: params.plugin,
             success: function() {
-                $('.sharemeup').shareMeUp({
+                jQuery('.sharemeup').shareMeUp({
                     size: params.size,
                     style: params.style,
                     imgPath: params.imgPath
