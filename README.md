@@ -11,7 +11,7 @@ Here it's possible to finde some documentation about plugin usage. If you need d
 
 ***
 
-## Install
+## INSTALLATION
 
 ### Manual Installation
 In order to manually install the plugin, simply follow the following instructions:
@@ -52,7 +52,7 @@ $ bower install sharemeup --save-dev
 
 ***
 
-## Usage
+## USAGE
 In order to use our plugin you simply need to initialize plugin in this way
 ```javascript
 $('.elementClass').shareMeUp();
@@ -67,6 +67,17 @@ You can use the **data-social** attribute to specify the social network you want
 
 ***
 
+## PLUGIN OPTIONS
+
+As a common jQuery plugin, ShareMeUp provides some options to customize plugin usage.<br>
+There are some available icons styles and sizes and it's possible to customize icons image folder path, to let you place icons where you want inside your site file tree.<br>
+The following table explains all plugin options, kinds and accepted values.
+
+| Option Name  | Type  | Accepted Values | Default | Desc |
+| --------------- |--------------- | --------------- | --------------- | --------------- |
+| **style** | [STRING] | "default", "rounded", "hexagon" | "default" | *This is the icon style* |
+| **size** | [STRING] | "small", "medium", "large" | "medium" | *This is the icon size* |
+| **imgPath** | [STRING] | any string as folder path | "img/sharemeup/" | *This is the icon directory path. Path must be relative to the page where plugin is used* |
 
 #### Styles
 
