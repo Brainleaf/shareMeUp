@@ -1,9 +1,6 @@
 # shareMeUp (v0.9.2-beta)
 ShareMeUp is an open source widget for social networks page sharing
 
-## WARNING
-This plugin is under develope, so don't use it at now!
-
 ## jQuery Plugin
 ShareMeUp share widgets are based on **jquery.sharemeup.js** jQuery plugin.<br>
 Here it's possible to finde some documentation about plugin usage. If you need documentation about widget usage, please see more at the official page [http://brainleaf.github.io/shareMeUp](http://brainleaf.github.io/shareMeUp)
@@ -97,14 +94,18 @@ The following table explains all plugin options, kinds and accepted values.
 
 #### History
 
-**Version 0.9.1**
+**Version 0.9.2 beta**
+* Some bugs fixed
+* CDN version updated
+
+**Version 0.9.1 alpha**
 * Some bugs fixed
 
-**Version 0.9.0**
+**Version 0.9.0 alpha**
 * Two new icon styles added: _rounded_ and _hexagon_ 
 
-**Version 0.8.2**
+**Version 0.8.2 alpha**
 * Some javascript updates
 
-**Version 0.8.1**
+**Version 0.8.1 alpha**
 * First Update
