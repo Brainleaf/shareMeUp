@@ -33,8 +33,8 @@ ShareMeUp requires jQuery Library, so if you don't have it already loaded, inclu
 ```
 Then include plugin **css** and **javascript** files:
 ```html
-<link href="https://brainleaf.github.io/shareMeUp/cdn/alpha/latest/css/sharemeup.min.css">
-<script src="https://brainleaf.github.io/shareMeUp/cdn/alpha/latest/js/jquery.sharemeup.min.js"></script>
+<link href="https://brainleaf.github.io/shareMeUp/cdn/v0/beta/css/sharemeup.min.css">
+<script src="https://brainleaf.github.io/shareMeUp/cdn/v0/beta/js/jquery.sharemeup.min.js"></script>
 ```
 
 ##### CDN updates
