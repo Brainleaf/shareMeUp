@@ -47,6 +47,9 @@ When plugin is initialized you can use the following markup to obtain a social s
 You can use the **data-social** attribute to specify the social network you want.
 
 
+***
+
+
 #### Styles
 
 | Default  | Hexagon  | Rounded |
