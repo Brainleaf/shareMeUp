@@ -4,23 +4,47 @@ ShareMeUp is an open source widget for social networks page sharing
 ## WARNING
 This plugin is under develope, so don't use it at now!
 
-## Install from CDN
+## jQuery Plugin
+ShareMeUp share widgets are based on **jquery.sharemeup.js** jQuery plugin.<br>
+Here it's possible to finde some documentation about plugin usage. If you need documentation about widget usage, please see the official page [http://brainleaf.github.io/shareMeUp.](http://brainleaf.github.io/shareMeUp.)
+
+## Install
+
+### Install from CDN
 ShareMeUp requires jQuery Library, so if you don't have it already loaded, include it in your page:
 ```html
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 ```
-Then include the two following lines
-```javascript
-<script src="https://brainleaf.github.io/shareMeUp/cdn/alpha/latest/js/sharemeup.js"><script>
-<script>new shareMeUp({async:true,size:"large",style:"default"}).init();</script>
+Then include plugin
+```html
+<script src="https://brainleaf.github.io/shareMeUp/cdn/alpha/latest/js/jquery.sharemeup.min.js"></script>
 ```
 
-#### CDN updates
+##### CDN updates
 CDN will be updated only with the latest main stable version.<br>
 Each main version will have his cdn link, so you will recive only updates only for the main version you are using.<br>
 **Subscribe our newsletter to stay updated about new releases and updates.**
 
+
+### Install from Bower
+```
+$ bower install sharemeup --save-dev
+```
+
 ***
+
+## Usage
+In order to use our plugin you simply need to initialize plugin in this way
+```javascript
+$('.elementClass').shareMeUp();
+```
+
+When plugin is initialized you can use the following markup to obtain a social share button
+```html
+<div class="elementClass" data-social="facebook"></div>
+```
+You can use the **data-social** attribute to specify the social network you want.
+
 
 #### Styles
 
@@ -38,7 +62,7 @@ Each main version will have his cdn link, so you will recive only updates only f
 ***
 
 
-#### Hystory
+#### History
 
 **Version 0.9.1**
 * Some bugs fixed
