@@ -6,7 +6,7 @@ This plugin is under develope, so don't use it at now!
 
 ## jQuery Plugin
 ShareMeUp share widgets are based on **jquery.sharemeup.js** jQuery plugin.<br>
-Here it's possible to finde some documentation about plugin usage. If you need documentation about widget usage, please see the official page [http://brainleaf.github.io/shareMeUp.](http://brainleaf.github.io/shareMeUp.)
+Here it's possible to finde some documentation about plugin usage. If you need documentation about widget usage, please see more at the official page [http://brainleaf.github.io/shareMeUp](http://brainleaf.github.io/shareMeUp)
 
 
 ***
