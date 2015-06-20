@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+    
+    <head>
+        <title>ShareMeUp</title>
+        
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link href="http://alexgorbatchev.com/pub/sh/2.1.382/styles/shCore.css" rel="stylesheet" type="text/css" />
+        <link href="http://alexgorbatchev.com/pub/sh/2.1.382/styles/shThemeFadeToGrey.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="demo.css">
+        
+        
+        <script src="http://alexgorbatchev.com/pub/sh/2.1.382/scripts/shCore.js" type="text/javascript"></script>
+        <script src="http://alexgorbatchev.com/pub/sh/2.1.382/scripts/shBrushXml.js" type="text/javascript"></script>
+        <script src="http://alexgorbatchev.com/pub/sh/2.1.382/scripts/shBrushJScript.js" type="text/javascript"></script>
+        <script src="http://alexgorbatchev.com/pub/sh/2.1.382/scripts/shBrushCss.js" type="text/javascript"></script>
+        
+        <script type="text/javascript">
+            SyntaxHighlighter.all()    
+        </script>
+    </head>
+    
+    
+    <body>
+        
+        <header>
+            <h1>ShareMeUp Demo <small>ShareMeUp jQuery plugin demo page.</small></h1>
+        </header>
+        
+        <div class="wrapper">
+            <h3>First Example</h3>
+            <p>
+                This is an example of ShareMeUp usage with all custom options
+            </p>
+            <h5>HTML</h5>
+            <script type="syntaxhighlighter" class="brush: xml">
+                <span class="sharemeup" data-social="facebook"></span>
+                <span class="sharemeup" data-social="twitter"></span>
+                <span class="sharemeup" data-social="google_plus"></span>
+                <span class="sharemeup" data-social="linkedin"></span>
+                <span class="sharemeup" data-social="pinterest"></span>
+            </script>
+            
+            <h5>Javascript</h5>
+            <script type="syntaxhighlighter" class="brush: js">
+                $(window).on("load", function() {
+                    $('.sharemeup').shareMeUp({
+                        style: "hexagon",
+                        size: "large",
+                        imgPath: "../dist/img/sharemeup/"
+                    });
+                });
+            </script>
+            
+            <h5>Example Output</h5>
+            <span class="sharemeup" data-social="facebook"></span>
+            <span class="sharemeup" data-social="twitter"></span>
+            <span class="sharemeup" data-social="google_plus"></span>
+            <span class="sharemeup" data-social="linkedin"></span>
+            <span class="sharemeup" data-social="pinterest"></span>
+        </div>
+        
+        <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="../dist/js/jquery.sharemeup.js"></script>
+        <script>
+            
+            $(window).on("load", function() {
+                $('.sharemeup').shareMeUp({
+                    style: "hexagon",
+                    size: "large",
+                    imgPath: "../dist/img/sharemeup/"
+                });
+            });
+           
+        </script>
+    </body>
+
+</html>
