@@ -42,6 +42,8 @@ CDN will be updated only with the latest main stable version.<br>
 Each main version will have his cdn link, so you will recive only updates only for the main version you are using.<br>
 **Subscribe our newsletter to stay updated about new releases and updates.**
 
+[Click Here](http://brainleaf.us11.list-manage1.com/subscribe?u=2864a1cf3439d74a57ade24aa&id=a642762ab3) to subscribe our newsletter
+
 
 ### Install from Bower
 ```
