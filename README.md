@@ -8,7 +8,23 @@ This plugin is under develope, so don't use it at now!
 ShareMeUp share widgets are based on **jquery.sharemeup.js** jQuery plugin.<br>
 Here it's possible to finde some documentation about plugin usage. If you need documentation about widget usage, please see the official page [http://brainleaf.github.io/shareMeUp.](http://brainleaf.github.io/shareMeUp.)
 
+
+***
+
 ## Install
+
+### Manual Installation
+In order to manually install the plugin, simply follow the following instructions:
+
+1. Include ShareMeUp css file
+```html
+<link rel="stylesheet" href="plugin/path/css/sharemeup.min.css">
+```
+2. Include jQuery and ShareMeUp plugin javascript files
+```html
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="plugin/path/js/jquery.sharemeup.min.js"></script>
+```
 
 ### Install from CDN
 ShareMeUp requires jQuery Library, so if you don't have it already loaded, include it in your page:
