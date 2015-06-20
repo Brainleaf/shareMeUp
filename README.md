@@ -1,4 +1,4 @@
-# shareMeUp (v0.9.1-alpha)
+# shareMeUp (v0.9.2-beta)
 ShareMeUp is an open source widget for social networks page sharing
 
 ## WARNING
