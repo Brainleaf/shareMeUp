@@ -332,7 +332,7 @@ function makeConfig() {
         
         var iconStyle = $('.icon-selector.style.selected').data('style');
         
-        var javascriptCode = '&lt;script src="https://brainleaf.github.io/shareMeUp/cdn/alpha/latest/js/sharemeup.js"&gt;&lt;/script&gt \n';
+        var javascriptCode = '&lt;script src="https://brainleaf.github.io/shareMeUp/cdn/v0/beta/js/sharemeup.js"&gt;&lt;/script&gt \n';
             javascriptCode += '&lt;script&gt;new shareMeUp({async:true,size:"' + iconSize + '",style:"' + iconStyle + '"}).init();&lt;/script&gt; \n';
 
         $('#showConfig').find('#javascript').html(javascriptCode);
