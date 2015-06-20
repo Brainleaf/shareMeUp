@@ -8,6 +8,38 @@ Here it's possible to finde some documentation about plugin usage. If you need d
 
 ***
 
+
+## Plugin dir structure
+
+The basic structure of the project is given in the following way:
+
+```
+├── demo/
+│   ├── demo.css
+│   ├── demo.less
+│   └── demo.html
+│   
+├── dist/
+│   ├── css/
+│   │     ├── sharemeup.css
+│   │     ├── sharemeup.min.css
+│   │     └── sharemeup.less
+│   ├── js/
+│   │     ├── jquery.sharemeup.js
+│   │     ├── jquery.sharemeup.min.js
+│   │     └── sharemeup.js
+│   └── img/
+│         └── sharemeup/
+│               ├── default/ ... [all style icons]
+│               ├── hexagon/ ... [all style icons]
+│               └── rounded/ ... [all style icons]
+├── bower.json
+├── LICENSE
+└── README.md
+```
+
+***
+
 ## INSTALLATION
 
 ### Manual Installation
