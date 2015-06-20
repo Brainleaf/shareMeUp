@@ -17,6 +17,7 @@ ShareMeUp requires jQuery Library, so if you don't have it already loaded, inclu
 ```
 Then include plugin
 ```html
+<link href="https://brainleaf.github.io/shareMeUp/cdn/alpha/latest/css/sharemeup.min.css">
 <script src="https://brainleaf.github.io/shareMeUp/cdn/alpha/latest/js/jquery.sharemeup.min.js"></script>
 ```
 
