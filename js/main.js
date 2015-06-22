@@ -316,28 +316,41 @@ function makeConfig() {
     });
     
     
+    $('.accept-condition-ceckbox').on('click',function(e) {
+        $(this).toggleClass('checked');
+    });
+    
     
     $('#getConfig').on('click',function(e) {
         e.preventDefault();
         
-        var servicesCode = "&lt;!-- Place inside your html markup --&gt;\n";
-        $('.icon-selector.service').each(function() {
-            if( $(this).hasClass('selected') ) {
-                var serviceName = $(this).data('social');
-                servicesCode += '&lt;span class="sharemeup" data-social="' + serviceName + '"&gt;&lt;/span&gt;\n';
-            }
-        });
-        
-        var iconSize = $('.icon-selector.size.selected').data('size');
-        
-        var iconStyle = $('.icon-selector.style.selected').data('style');
-        
-        var javascriptCode = '&lt;script src="https://brainleaf.github.io/shareMeUp/cdn/v0/beta/js/sharemeup.js"&gt;&lt;/script&gt \n';
-            javascriptCode += '&lt;script&gt;new shareMeUp({async:true,size:"' + iconSize + '",style:"' + iconStyle + '"}).init();&lt;/script&gt; \n';
+        if($('.accept-condition-ceckbox').hasClass('checked')) {
+            
+            var servicesCode = "&lt;!-- Place inside your html markup --&gt;\n";
+            $('.icon-selector.service').each(function() {
+                if( $(this).hasClass('selected') ) {
+                    var serviceName = $(this).data('social');
+                    servicesCode += '&lt;span class="sharemeup" data-social="' + serviceName + '"&gt;&lt;/span&gt;\n';
+                }
+            });
 
-        $('#showConfig').find('#javascript').html(javascriptCode);
-        $('#showConfig').find('#markup').html(servicesCode);
-        $('#configuratormodal').modal();
+            var iconSize = $('.icon-selector.size.selected').data('size');
+
+            var iconStyle = $('.icon-selector.style.selected').data('style');
+
+            var javascriptCode = '&lt;script src="https://brainleaf.github.io/shareMeUp/cdn/v0/beta/js/sharemeup.js"&gt;&lt;/script&gt \n';
+                javascriptCode += '&lt;script&gt;new shareMeUp({async:true,size:"' + iconSize + '",style:"' + iconStyle + '"}).init();&lt;/script&gt; \n';
+
+            $('#showConfig').find('#javascript').html(javascriptCode);
+            $('#showConfig').find('#markup').html(servicesCode);
+            $('#configuratormodal').modal();
+
+        }else{
+            
+            $('#errorModal').find('.modal-body').html('<h3>Warning</h3><p>You need to accept terms and conditions</p>');
+            $('#errorModal').modal();
+        }
+        
     });
     
     
