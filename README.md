@@ -94,7 +94,7 @@ When plugin is initialized you can use the following markup to obtain a social s
 You can use the **data-social** attribute to specify the social network you want.
 
 #### Available Social Networks
-Use the following names in **data-social=""* attribute to load the relative social networks share link:<br>
+Use the following names in **data-social=""** attribute to load the relative social networks share link:<br>
 *facebook, twitter, google_plus, linkedin, pinterest, reddit, stumbleupon, delicious*
 
 ### Buttons Group
