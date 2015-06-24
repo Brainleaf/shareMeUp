@@ -5,7 +5,8 @@
 
         var pluginName = "shareMeUp",
             defaults = {
-                layout: "default",
+                buttons: "single", // group
+                layout: "default",// not used
                 size: "medium",
                 style: "default",
                 imgPath: "img/sharemeup/"
@@ -40,13 +41,26 @@
 		// Avoid Plugin.prototype conflicts
 		$.extend(Plugin.prototype, {
             init: function () {
-                    this.setButtons();
-            },
-            setButtons: function () {
                 
-                var 
-                    markup = "",
-                    params = {};
+                this.settings.custom = $(this.element).data('custom');
+                if ($(this.element).hasClass('custom')) this.settings.custom = true;
+                
+                this.settings.group = $(this.element).data('group');
+                if ($(this.element).hasClass('sharegroup')) this.settings.group = true;
+                
+                if (this.settings.group !==  undefined && this.settings.group === true) {
+                    this.setButtonsGroup();
+                }else{
+                    this.setButton();
+                }
+
+            },
+            
+            /* ====================================================== */
+            /* GET PARAMETERS */
+            /* ====================================================== */
+            getParameters: function () {
+                var params = {};
                     params.social = $(this.element).data('social'); 
                     params.title = $(this.element).data('title');
                     params.link = $(this.element).data('link');
@@ -61,6 +75,73 @@
                 if ( params.title === "" || params.title === undefined) params.title = this.shareTitle;
                 if ( params.link === "" || params.link === undefined) params.link = this.shareLink;
 
+                return params;
+            },
+            
+            /* ====================================================== */
+            /* GET BUTTON SIZE */
+            /* ====================================================== */
+            getBtnSize: function (btnSize) {
+                
+                switch(btnSize) {
+                    case "small":
+                        var btnPxSize = "15px"
+                        break;
+                    case "medium":
+                        var btnPxSize = "30px"
+                        break;
+                    case "large":
+                        var btnPxSize = "40px"
+                        break;
+                    default:
+                        var btnPxSize = "30px"
+                        break;
+                } 
+                
+                return btnPxSize;
+            },
+            
+            /* ====================================================== */
+            /* SET SHARE BUTTONS GRUOP */
+            /* ====================================================== */
+            setButtonsGroup: function () {
+                var
+                    markup = "",
+                    plugin = this,
+                    params = this.getParameters(),
+                    socialsArray = params.social;
+                
+                socialsArray = socialsArray.replace(" ","");
+                socialsArray = socialsArray.split(",");
+                
+                $.each(socialsArray, function(index) {
+                    
+                    params.social = socialsArray[index];
+                    
+                    var linkString = plugin[params.social],
+                        url = linkString.replace('{[URL]}',params.link);
+                        url = url.replace('{[TITLE]}',params.title);
+                        url = url.replace('{[MEDIA]}',params.media);
+                        url = url.replace('{[DOMAIN]}',params.domain);
+                    
+                    var btnPxSize = plugin.getBtnSize(params.size);
+                    var content = '<img src="' + plugin.settings.imgPath + params.style + '/btn_' + params.style + '_' + params.social + '_' + params.size + '.png" style="width:100%;height:auto;" alt="'+ params.social +'">'; 
+                    
+                    markup += '<span style="width:'+ btnPxSize +'; height:'+ btnPxSize +'; display:inline-block;"><a class="sharemeup-link" href="'+ url +'">'+ content +'</a></span>\n'; 
+                });
+                
+                $(this.element).html(markup);
+                this.openShrarePopup();
+            },
+            
+            /* ====================================================== */
+            /* SET SHARE BUTTON */
+            /* ====================================================== */
+            setButton: function () {
+                
+                var 
+                    markup = "",
+                    params = this.getParameters();
 
                 var linkString = this[params.social];
                 var url = linkString.replace('{[URL]}',params.link);
@@ -68,28 +149,14 @@
                     url = url.replace('{[MEDIA]}',params.media);
                     url = url.replace('{[DOMAIN]}',params.domain);
 
-                if ( $(this.element).hasClass('custom') ) {
-                    console.log('custom class');
+                if ( this.settings.custom !== undefined && this.settings.custom === true ) {
+                    
                     var content = $(this.element).html(); 
 
                 }else{
-
-                    switch(params.size) {
-                        case "small":
-                            var btnPxSize = "15px"
-                            break;
-                        case "medium":
-                            var btnPxSize = "30px"
-                            break;
-                        case "large":
-                            var btnPxSize = "40px"
-                            break;
-                        default:
-                            var btnPxSize = "30px"
-                            break;
-                    } // end switch
                     
-                    
+                    var btnPxSize = this.getBtnSize(params.size);
+                                        
                     $(this.element).css({"width":btnPxSize,"height":btnPxSize,"display":"inline-block"});
                     var content = '<img src="' + this.settings.imgPath + params.style + '/btn_' + params.style + '_' + params.social + '_' + params.size + '.png" style="width:100%;height:auto;" alt="'+ params.social +'">'; 
                 }
@@ -100,11 +167,15 @@
                     var dataAttribute = '';
                 }
                 
-                markup = '<a href="' + url + '"' + dataAttribute +' target="_blank">' + content + '</a>';
+                markup = '<a class="sharemeup-link" href="' + url + '"' + dataAttribute +' target="_blank">' + content + '</a>';
                 $(this.element).html(markup);
                 this.openShrarePopup();
 
             },
+            
+            /* ====================================================== */
+            /* OPEN SHARE WINDOW POPUP */
+            /* ====================================================== */
             openShrarePopup: function() {
                 $(this.element).find('a').on('click', function(e) {
                     e.preventDefault(e);
