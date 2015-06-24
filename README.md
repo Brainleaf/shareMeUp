@@ -1,4 +1,4 @@
-# shareMeUp (v0.10.0-beta)
+# shareMeUp (v0.11.0-beta)
 ShareMeUp is an open source widget for social networks page sharing
 
 ## jQuery Plugin
@@ -89,9 +89,20 @@ $('.elementClass').shareMeUp();
 
 When plugin is initialized you can use the following markup to obtain a social share button
 ```html
-<div class="elementClass" data-social="facebook"></div>
+<span class="elementClass" data-social="facebook"></span>
 ```
 You can use the **data-social** attribute to specify the social network you want.
+
+#### Available Social Networks
+Use the following names in **data-social=""* attribute to load the relative social networks share link:<br>
+*facebook, twitter, google_plus, linkedin, pinterest, reddit, stumbleupon, delicious*
+
+### Buttons Group
+ShareMeUp provides a faster way to load a buttons group instead single buttons.<br>
+You can do this simply adding some data attributes:
+```html
+<div class="elementClass" data-group="true" data-social="facebook,twitter,linkedin,google_plus"></div>
+```
 
 
 ***
@@ -125,6 +136,11 @@ The following table explains all plugin options, kinds and accepted values.
 
 
 #### History
+
+**Version 0.11.0 beta**
+* Reddit button added
+* StumbleUpon button added
+* Delicious button added
 
 **Version 0.10.0 beta**
 * New buttons group feature added
