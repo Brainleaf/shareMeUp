@@ -33,7 +33,7 @@
             this.linkedin = "http://www.linkedin.com/shareArticle?mini=true&url={[URL]}&title={[TITLE]}&source={[DOMAIN]}",
             this.pinterest = "http://pinterest.com/pin/create/button/?media={[MEDIA]}&url={[URL]}&is_video=false&description={[TITLE]}",
             this.stumbleupon = "http://www.stumbleupon.com/submit?url={[URL]}&title={[TITLE]}";   
-            this.delicious = "http://del.icio.us/post?url={[URL]}&title={[TITLE]]}";
+            this.delicious = "http://del.icio.us/post?url={[URL]}&title={[TITLE]}";
             this.reddit = "http://www.reddit.com/submit?url={[URL]}&title={[TITLE]}";
             //this.delicious = "http://del.icio.us/post?url={[URL]}&title={[TITLE]]}&notes={[DESCRIPTION]}";
 
