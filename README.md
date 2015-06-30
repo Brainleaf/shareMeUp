@@ -1,4 +1,4 @@
-# shareMeUp (v0.11.1-beta)
+# shareMeUp (v1.0.0)
 ShareMeUp is an open source widget for social networks page sharing
 
 ## jQuery Plugin
@@ -136,6 +136,9 @@ The following table explains all plugin options, kinds and accepted values.
 
 
 #### History
+
+**Version 1.0.0**
+* First stable release
 
 **Version 0.11.1 beta**
 * Bug fixed on "Delicious" button
