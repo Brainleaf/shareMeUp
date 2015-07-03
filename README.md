@@ -116,7 +116,7 @@ The following table explains all plugin options, kinds and accepted values.
 | Option Name  | Type  | Accepted Values | Default | Desc |
 | --------------- |--------------- | --------------- | --------------- | --------------- |
 | **style** | [STRING] | "default", "rounded", "hexagon" | "default" | *This is the icon style* |
-| **size** | [STRING] | "small", "medium", "large" | "medium" | *This is the icon size* |
+| **size** | [STRING] | "small", "medium", "large" | "medium" | *This is the icon size*<br>**This option will be deprecated from the next update and will be completely removed from the next main release** |
 | **imgPath** | [STRING] | any string as folder path | "img/sharemeup/" | *This is the icon directory path. Path must be relative to the page where plugin is used* |
 
 #### Styles
@@ -134,7 +134,16 @@ The following table explains all plugin options, kinds and accepted values.
 
 ***
 
+#### Available Buttons
 
+<img src="https://github.com/Brainleaf/shareMeUp/blob/master/dist/img/sharemeup/default/btn_default_facebook_medium.png">
+<img src="https://github.com/Brainleaf/shareMeUp/blob/master/dist/img/sharemeup/default/btn_default_twitter_medium.png">
+<img src="https://github.com/Brainleaf/shareMeUp/blob/master/dist/img/sharemeup/default/btn_default_linkedin_medium.png">
+<img src="https://github.com/Brainleaf/shareMeUp/blob/master/dist/img/sharemeup/default/btn_default_google_plus_medium.png">
+<img src="https://github.com/Brainleaf/shareMeUp/blob/master/dist/img/sharemeup/default/btn_default_pinterest_medium.png">
+<img src="https://github.com/Brainleaf/shareMeUp/blob/master/dist/img/sharemeup/default/btn_default_delicious_medium.png">
+<img src="https://github.com/Brainleaf/shareMeUp/blob/master/dist/img/sharemeup/default/btn_default_reddit_medium.png">
+<img src="https://github.com/Brainleaf/shareMeUp/blob/master/dist/img/sharemeup/default/btn_default_stumbleupon_medium.png">
 #### History
 
 **Version 1.0.0**
