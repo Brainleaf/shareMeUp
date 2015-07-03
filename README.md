@@ -144,10 +144,10 @@ The following table explains all plugin options, kinds and accepted values.
 <img src="https://github.com/Brainleaf/shareMeUp/blob/master/dist/img/sharemeup/default/btn_default_delicious_medium.png">
 <img src="https://github.com/Brainleaf/shareMeUp/blob/master/dist/img/sharemeup/default/btn_default_reddit_medium.png">
 <img src="https://github.com/Brainleaf/shareMeUp/blob/master/dist/img/sharemeup/default/btn_default_stumbleupon_medium.png">
-#### History
-
 
 ***
+
+#### History
 
 **Version 1.0.0**
 * First stable release
